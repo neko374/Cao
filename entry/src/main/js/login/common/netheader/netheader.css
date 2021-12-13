@@ -1,0 +1,16 @@
+@import '../css/common.css';
+
+.device-img-top {
+    margin-top: 24px;
+}
+
+.device-img {
+    width: 152px;
+    height: 152px;
+}
+
+.net-name {
+    margin-top: 8px;
+    color: #000000;
+    font-size: 20px;
+}

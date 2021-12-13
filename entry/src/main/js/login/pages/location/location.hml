@@ -1,0 +1,29 @@
+<element name="netheader" src="../../common/netheader/netheader">
+</element>
+
+<div class="container">
+    <netheader action="showName" name="{{ $t('strings.page-location-title') }}">
+    </netheader>
+    <div class="margin-top-20 flex-row home-container">
+        <text class="font-16 font-color-black">{{ $t('strings.page-location-home') }}</text>
+        <div class="flex-row right-position" onclick="otherHomeClick">
+            <text class="font-14 font-color-light home" onclick="selectHome">{{ home }}</text>
+            <image class="arrow-right" src="{{ $t('files.arrowRight') }}"/>
+        </div>
+    </div>
+    <div class="margin-top-24">
+        <div for="{{ room in roomList }}" class="flex-row">
+            <text class="room" onclick="roomClick($idx)" style="background-color : {{ room.color }};">{{ room.name }}
+            </text>
+        </div>
+    </div>
+    <div class="text-center flex-row confirm-button-container margin-top-24">
+        <button onclick="cancelClick" class="confirm-button-base" value="{{ $t('strings.cancelValue') }}">
+        </button>
+        <divider class="divider-vertical" vertical="true">
+        </divider>
+        <button onclick="completeClick" class="confirm-button-base"
+                value="{{ $t('strings.page-location-complete') }}">
+        </button>
+    </div>
+</div>

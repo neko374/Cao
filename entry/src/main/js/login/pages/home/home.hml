@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="flex-column margin-top-24">
+        <text class="font-65ST-bold font-20 font-color-black">{{ $t('strings.page-home-title') }}
+        </text>
+    </div>
+    <div class="margin-top-6">
+        <list class="home-list">
+            <list-item for="homes">
+                <div class="home-list-item flex-row">
+                    <text class="font-16 font-65ST-bold font-color-black">{{ $item }}
+                    </text>
+                    <input name="onesHome" value="{{ $idx }}" type="radio" class="item-radio" onchange="homeChange">
+                    </input>
+                </div>
+            </list-item>
+        </list>
+    </div>
+    <div class="text-center flex-row confirm-button-container margin-top-24">
+        <button onclick="cancelClick" class="confirm-button-base" value="{{ $t('strings.cancelValue') }}">
+        </button>
+        <divider class="divider-vertical" vertical="true">
+        </divider>
+        <button onclick="confirmClick" class="confirm-button-base"
+                value="{{ $t('strings.page-home-confirm') }}">
+        </button>
+    </div>
+</div>

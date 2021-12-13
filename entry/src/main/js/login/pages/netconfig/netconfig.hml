@@ -1,0 +1,28 @@
+<element name="netheader" src="../../common/netheader/netheader">
+</element>
+<div class="container">
+    <netheader action="showName" name="{{ $t('strings.page-netconfig-title') }}">
+    </netheader>
+    <div class="flex-column margin-top-6">
+        <input type="text" class="common-input font-65ST"
+               placeholder="{{ $t('strings.page-netconfig-namePlaceholder') }}"
+               value="{{ ssid }}">
+        </input>
+        <input type="password" onchange="getWifiPwd" class="common-input font-65ST"
+               placeholder="{{ $t('strings.page-netconfig-pwdPlaceHolder') }}" value="{{ wifiPwd }}">
+        </input>
+    </div>
+    <div class="margin-top-24" @click="otherWifiClick">
+        <text class="font-65ST common-text-color">{{ $t('strings.page-netconfig-phonePromptInfo') }}
+        </text>
+    </div>
+    <div class="text-center flex-row confirm-button-container margin-top-24">
+        <button onclick="cancelClick" class="confirm-button-base" value="{{ $t('strings.cancelValue') }}">
+        </button>
+        <divider class="divider-vertical" vertical="true">
+        </divider>
+        <button onclick="connectClick" class="confirm-button-base"
+                value="{{ $t('strings.page-netconfig-connectValue') }}">
+        </button>
+    </div>
+</div>

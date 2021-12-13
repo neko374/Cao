@@ -1,0 +1,9 @@
+<div class="container">
+    <image src="{{ deviceImg }}" class="device-image"/>
+    <text class="device-name">{{ deviceName }}</text>
+    <div class="button-container">
+        <button value="{{ $t('strings.cancel') }}" class="base-button" onclick="cancel"/>
+        <divider class="vertical-divider" vertical="true"/>
+        <button value="{{ $t('strings.net-config') }}" class="base-button" onclick="configNet"/>
+    </div>
+</div>

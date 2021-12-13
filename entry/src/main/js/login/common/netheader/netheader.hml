@@ -1,0 +1,10 @@
+<div class="container">
+    <div class="text-center flex-column device-img-top">
+        <div class="text-center">
+            <image src="{{ $t('files.device') }}" class="device-img">
+            </image>
+        </div>
+        <text if="{{ actionType == 'showName' }}" class="net-name font-65ST">{{ name }}
+        </text>
+    </div>
+</div>

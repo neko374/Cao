@@ -1,0 +1,12 @@
+@import '../../common/css/common.css';
+
+.discover-present {
+    font-size: 18px;
+    text-color: #FF000000;
+}
+
+.discover-ap {
+    font-size: 14px;
+    margin-top: 2px;
+    text-color: #FF000000;
+}

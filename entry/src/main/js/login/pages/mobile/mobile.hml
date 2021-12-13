@@ -1,0 +1,34 @@
+<element name="bindheader" src="../../common/bindheader/bindheader">
+</element>
+<div class="container">
+    <bindheader>
+    </bindheader>
+    <div class="flex-column title-margin">
+        <text class="font-55ST page-mobile-subscript-text">{{ $t('strings.page-mobile-subscript') }}
+        </text>
+    </div>
+    <div class="flex-column">
+        <input onchange="getPhoneNumer" type="number" class="common-input"
+               placeholder="{{ $t('strings.page-mobile-mobile-placeholder') }}">
+        </input>
+        <div class="flex-column">
+            <div class="flex-row number-space">
+                <input onchange="getVerificationCodeInfo" type="number" class="common-input-special"
+                       placeholder="{{ $t('strings.page-mobile-psw-placeholder') }}">
+                </input>
+                <text class="common-text-color common-text" onclick="getVerificationCode">{{ prompt }}
+                </text>
+            </div>
+            <divider class="divider-horizontal">
+            </divider>
+        </div>
+    </div>
+
+    <div class="text-center confirm-button-container margin-top-40">
+        <button onclick="cancelClick" class="confirm-button-base" type="text" value="{{ $t('strings.cancelValue') }}">
+        </button>
+        <button onclick="authorClick" class="confirm-button-base-active" type="text"
+                value="{{ $t('strings.page-mobile-authAndBind') }}">
+        </button>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "entry_MainAbility",
+      "value": "entry_MainAbility"
+    },
+    {
+      "name": "mainability_description",
+      "value": "JS_OneHop Device Ability"
+    },
+    {
+      "name": "widget_ability_description",
+      "value": "This is a WidgetAbility"
+    }
+  ]
+}

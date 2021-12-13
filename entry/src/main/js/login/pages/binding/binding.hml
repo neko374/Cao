@@ -1,0 +1,28 @@
+<element name="bindheader" src="../../common/bindheader/bindheader">
+</element>
+<div class="container">
+    <bindheader>
+    </bindheader>
+    <div class="text-center flex-column">
+        <text class="font-20 font-color-black font-65ST-bold margin-top-24">{{ mobileNumber }}
+        </text>
+        <text class="font-14 font-color-black margin-top-16">{{ $t('strings.page-binding-subscript') }}
+        </text>
+        <text class="font-14 font-color-black margin-top-16">{{ $t('strings.page-binding-guideUseOtherNumber') }}
+        </text>
+    </div>
+    <div class="text-center flex-column margin-top-64">
+        <div onclick="bindClick" class="common-button-blue text-center auth-button">
+            <text class="common-text-blue-color font-65ST">{{ $t('strings.page-binding-binding') }}
+            </text>
+        </div>
+        <div onclick="useOtherNumberClick" class="common-button text-center cancel-button margin-top-4">
+            <text class="common-text-color font-65ST">{{ $t('strings.page-binding-useOtherNumber') }}
+            </text>
+        </div>
+        <div onclick="cancelClick" class="common-button text-center cancel-button margin-top-4">
+            <text class="common-text-color font-65ST">{{ $t('strings.cancelValue') }}
+            </text>
+        </div>
+    </div>
+</div>

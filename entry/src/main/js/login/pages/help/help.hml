@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="margin-top-24 text-center">
+        <image class="guide-image" src="{{ $t('files.device') }}">
+        </image>
+    </div>
+    <div class="margin-top-24 flex-column">
+        <text class="font-16 font-65ST-bold font-color-black">{{ $t('strings.page-help-guideTitle') }}
+        </text>
+        <text class="font-14 font-65ST-bold font-color-black margin-top-16">{{ $t('strings.page-help-step1') }}
+        </text>
+        <text class="font-14 font-65ST-bold font-color-black margin-top-6">{{ $t('strings.page-help-step2') }}</text>
+    </div>
+    <div class="text-center flex-row confirm-button-container margin-top-24">
+        <button onclick="cancelClick" class="confirm-button-base" value="{{ $t('strings.cancelValue') }}">
+        </button>
+        <divider class="divider-vertical" vertical="true">
+        </divider>
+        <button onclick="configAgainClick" class="confirm-button-base"
+                value="{{ $t('strings.page-help-configAgain') }}">
+        </button>
+    </div>
+</div>

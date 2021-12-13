@@ -1,0 +1,30 @@
+<element name="header" src="../../common/header/header">
+</element>
+<div class="container">
+    <header>
+    </header>
+    <div class="flex-column title-margin">
+        <text class="font-65ST-bold get-mobile-subscript-text">{{ $t('strings.getMobileSubscript') }}
+        </text>
+    </div>
+    <div class="number-space margin-top-20" style="flex-direction : row;">
+        <text class="font-65ST-bold phone-number-text">{{ mobileNumber }}
+        </text>
+        <input type="checkbox" class="checkbox" checked="true" onchange="changeGetMobileNumber">
+        </input>
+    </div>
+    <div class="text-center">
+        <text class="font-55ST subscript-text">{{ $t('strings.subscript') }}
+        </text>
+    </div>
+    <div class="text-center flex-column">
+        <div onclick="authorClick" class="common-button-blue text-center auth-button">
+            <text class="common-text-blue-color font-65ST">{{ $t('strings.authValue') }}
+            </text>
+        </div>
+        <div onclick="cancelClick" class="common-button text-center cancel-button">
+            <text class="common-text-color font-65ST">{{ $t('strings.cancelValue') }}
+            </text>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,7 @@
+@import '../../common/css/common.css';
+
+.phone-button-base {
+    font-size: 32px;
+    color: #007DFF;
+    background-color: transparent;
+}

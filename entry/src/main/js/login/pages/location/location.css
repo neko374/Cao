@@ -1,0 +1,28 @@
+@import '../../common/css/common.css';
+
+.home-container {
+    width: 100%;
+    height: 24px;
+}
+
+.home {
+    height: 22px;
+}
+
+.arrow-right {
+    width: 12px;
+    height: 24px;
+    margin-left: 4px;
+}
+
+.room {
+    width: 68px;
+    height: 28px;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 14px;
+    background-color: gainsboro;
+    opacity: 0.8;
+}

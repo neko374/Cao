@@ -1,0 +1,342 @@
+{
+  "devName": "Fan",
+  "devType": "0",
+  "prodId": "FAN",
+  "templateUIInfo": [
+    {
+      "gravity": "default",
+      "heightType": "default",
+      "name": "power",
+      "span": 1,
+      "command": [
+        {
+          "characteristic": "on",
+          "reversal": [
+            {
+              "disableIcon": "/ic_power_nor.png",
+              "icon": "/ic_on.png",
+              "disableIconNight": "/ic_power_nor_dark.png",
+              "iconNight": "/ic_on_dark.png",
+              "value": 1
+            },
+            {
+              "disable": {
+                "name": [
+                  "model",
+                  "gear"
+                ]
+              },
+              "disableIcon": "/ic_power_nor.png",
+              "icon": "/ic_off.png",
+              "disableIconNight": "/ic_power_nor_dark.png",
+              "iconNight": "/ic_off_dark.png",
+              "value": 0
+            }
+          ],
+          "sid": "switch"
+        }
+      ],
+      "displayItemOne": {
+        "subType": "text",
+        "textDisplay": {
+          "down": {},
+          "upLeft": {
+            "description": {
+              "path": "switch/on",
+              "value": [
+                {
+                  "scope": "0",
+                  "target": "close"
+                },
+                {
+                  "scope": "1",
+                  "target": "open"
+                }
+              ]
+            },
+            "type": "dynamicText",
+            "value": "${switch/on}"
+          },
+          "upRight": {}
+        }
+      },
+      "uiType": "REVERSAL"
+    },
+    {
+      "gravity": "centerDivider",
+      "heightType": "default",
+      "name": "model",
+      "span": 1,
+      "command": [
+        {
+          "characteristic": "mode",
+          "enumInfo": [
+            {
+              "displayItem": {
+                "icon": {
+                  "path": "windMode/mode",
+                  "value": [
+                    {
+                      "defaultTarget": "/ic_wind_nor.png",
+                      "scope": "-",
+                      "target": "/ic_wind_on.png"
+                    }
+                  ],
+                  "valueNight": [
+                    {
+                      "defaultTarget": "/ic_wind_nor.png",
+                      "scope": "-",
+                      "target": "/ic_wind_on.png"
+                    }
+                  ]
+                },
+                "iconText": {
+                  "type": "normalText",
+                  "value": "wind"
+                },
+                "subType": "iconTextVertical"
+              },
+              "value": 2
+            },
+            {
+              "displayItem": {
+                "icon": {
+                  "path": "windMode/mode",
+                  "value": [
+                    {
+                      "defaultTarget": "/ic_sleep_wind_nor.png",
+                      "scope": "-",
+                      "target": "/ic_sleep_wind_on.png"
+                    }
+                  ],
+                  "valueNight": [
+                    {
+                      "defaultTarget": "/ic_sleep_wind_nor.png",
+                      "scope": "-",
+                      "target": "/ic_sleep_wind_on.png"
+                    }
+                  ]
+                },
+                "iconText": {
+                  "type": "normalText",
+                  "value": "sleep"
+                },
+                "subType": "iconTextVertical"
+              },
+              "value": 3
+            }
+          ],
+          "sid": "windMode"
+        }
+      ],
+      "uiType": "ENUM"
+    },
+    {
+      "gravity": "centerDivider",
+      "heightType": "default",
+      "name": "gear",
+      "span": 1,
+      "command": [
+        {
+          "characteristic": "gear",
+          "enumInfo": [
+            {
+              "displayItem": {
+                "icon": {
+                  "path": "windGear/gear",
+                  "value": [
+                    {
+                      "defaultTarget": "/ic_wind_one_nor.png",
+                      "scope": "-",
+                      "target": "/ic_wind_one_on.png"
+                    }
+                  ],
+                  "valueNight": [
+                    {
+                      "defaultTarget": "/ic_wind_one_nor.png",
+                      "scope": "-",
+                      "target": "/ic_wind_one_on.png"
+                    }
+                  ]
+                },
+                "iconText": {
+                  "type": "normalText",
+                  "value": "one"
+                },
+                "subType": "iconTextVertical"
+              },
+              "value": 2
+            },
+            {
+              "displayItem": {
+                "icon": {
+                  "path": "windGear/gear",
+                  "value": [
+                    {
+                      "defaultTarget": "/ic_wind_two_nor.png",
+                      "scope": "-",
+                      "target": "/ic_wind_two_on.png"
+                    }
+                  ],
+                  "valueNight": [
+                    {
+                      "defaultTarget": "/ic_wind_two_nor.png",
+                      "scope": "-",
+                      "target": "/ic_wind_two_on.png"
+                    }
+                  ]
+                },
+                "iconText": {
+                  "type": "normalText",
+                  "value": "two"
+                },
+                "subType": "iconTextVertical"
+              },
+              "value": 3
+            },
+            {
+              "displayItem": {
+                "icon": {
+                  "path": "windGear/gear",
+                  "value": [
+                    {
+                      "defaultTarget": "/ic_wind_three_nor.png",
+                      "scope": "-",
+                      "target": "/ic_wind_three_on.png"
+                    }
+                  ],
+                  "valueNight": [
+                    {
+                      "defaultTarget": "/ic_wind_three_nor.png",
+                      "scope": "-",
+                      "target": "/ic_wind_three_on.png"
+                    }
+                  ]
+                },
+                "iconText": {
+                  "type": "normalText",
+                  "value": "three"
+                },
+                "subType": "iconTextVertical"
+              },
+              "value": 4
+            },
+            {
+              "displayItem": {
+                "icon": {
+                  "path": "windGear/gear",
+                  "value": [
+                    {
+                      "defaultTarget": "/ic_wind_four_nor.png",
+                      "scope": "-",
+                      "target": "/ic_wind_four_on.png"
+                    }
+                  ],
+                  "valueNight": [
+                    {
+                      "defaultTarget": "/ic_wind_four_nor.png",
+                      "scope": "-",
+                      "target": "/ic_wind_four_on.png"
+                    }
+                  ]
+                },
+                "iconText": {
+                  "type": "normalText",
+                  "value": "four"
+                },
+                "subType": "iconTextVertical"
+              },
+              "value": 5
+            }
+          ],
+          "sid": "windGear"
+        }
+      ],
+      "uiType": "ENUM"
+    },
+    {
+      "gravity": "default",
+      "heightType": "low",
+      "name": "Schedule a shutdown",
+      "span": 0.5,
+      "command": [
+        {
+          "characteristic": "mode",
+          "reversal": [
+            {
+              "disableIcon": "/ic_reservation_nor.png",
+              "icon": "/ic_reservation_nor.png",
+              "disableIconNight": "/ic_reservation_nor.png",
+              "iconNight": "/ic_reservation_nor.png",
+              "dialogList": [
+                "shutdownTime"
+              ],
+              "value": 0
+            },
+            {
+              "disableIcon": "/ic_reservation_on.png",
+              "icon": "/ic_reservation_on.png",
+              "disableIconNight": "/ic_reservation_on.png",
+              "iconNight": "/ic_reservation_on.png",
+              "value": 1
+            }
+          ],
+          "sid": "shutdown"
+        }
+      ],
+      "displayItemOne": {
+        "subType": "text",
+        "textDisplay": {
+          "down": {},
+          "upLeft": {
+            "type": "normalText",
+            "value": "Schedule a shutdown"
+          },
+          "upRight": {}
+        }
+      },
+      "uiType": "REVERSAL"
+    }
+  ],
+  "dialogUIInfo": [
+    {
+      "name": "Shutdown time",
+      "id": "shutdownTime",
+      "path": "shutdownTime",
+      "dialogType": "PICKER",
+      "controlItems": [
+        {
+          "name": "cancel",
+          "type": "cancel"
+        },
+        {
+          "name": "submit",
+          "type": "submit"
+        }
+      ],
+      "pickerType": "text",
+      "range": [
+        "1 hour",
+        "2 hour",
+        "3 hour",
+        "4 hour",
+        "5 hour",
+        "6 hour",
+        "7 hour",
+        "8 hour"
+      ],
+      "value": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "postField": "  shut down"
+    }
+  ],
+  "version": "0.1"
+}

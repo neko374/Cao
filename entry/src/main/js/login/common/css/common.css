@@ -1,0 +1,247 @@
+.container {
+    flex-direction: column;
+    margin-left: 24px;
+    margin-right: 24px;
+    background-color: rgba(247, 247, 247, 1);
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.text-center {
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.font-65ST {
+    font-family: HWtext-65ST,HWtext;
+    font-weight: normal;
+    allow-scale: false;
+}
+
+.font-65ST-bold {
+    font-family: HWtext-65ST,HWtext;
+    font-weight: 600;
+    allow-scale: false;
+}
+
+.font-55ST {
+    font-family: HWtext-55ST,HWtext;
+    font-weight: normal;
+    allow-scale: false;
+}
+
+.font-14 {
+    font-size: 14px;
+}
+
+.font-16 {
+    font-size: 16px;
+}
+
+.font-20 {
+    font-size: 20px;
+}
+
+.font-color-black {
+    text-color: #FF000000;
+}
+
+.font-color-normal {
+    text-color: #9e000000;
+}
+
+.font-color-light {
+    text-color: #000000;
+    opacity: 0.6;
+}
+
+.font-26 {
+    font-size: 26px;
+}
+
+.color-gray {
+    color: #999999;
+}
+
+.common-button:active {
+    color: white;
+    background-color: gray;
+}
+
+.common-button {
+    height: 40px;
+    width: 100%;
+    border-radius: 40px;
+    color: #358CFD;
+    background-color: transparent;
+}
+
+.common-button-blue:active {
+    color: white;
+    background-color: gray;
+}
+
+.common-button-blue {
+    height: 40px;
+    width: 100%;
+    border-radius: 40px;
+    background-color: #358CFD;
+}
+
+.common-text-blue-color {
+    color: white;
+    font-size: 16px;
+}
+
+.common-text-color {
+    color: #254ff7;
+    font-size: 16px;
+}
+
+.bottom {
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+
+.margin-top-4 {
+    margin-top: 4px;
+}
+
+.margin-top-6 {
+    margin-top: 6px;
+}
+
+.margin-top-16 {
+    margin-top: 16px;
+}
+
+.margin-top-20 {
+    margin-top: 20px;
+}
+
+.margin-top-24 {
+    margin-top: 24px;
+}
+
+.margin-top-30 {
+    margin-top: 30px;
+}
+
+.margin-top-40 {
+    margin-top: 40px;
+}
+
+.margin-top-50 {
+    margin-top: 50px;
+}
+
+.margin-top-64 {
+    margin-top: 64px;
+}
+
+.common-input {
+    height: 39px;
+    margin-top: 15px;
+    padding-left: 0px;
+    background-color: transparent;
+    border-bottom-color: darkgray;
+    border-bottom-width: 0.5px;
+    color: black;
+    placeholder-color: darkgray;
+}
+
+.common-input-special {
+    height: 39px;
+    margin-top: 15px;
+    padding-left: 0px;
+    background-color: transparent;
+    color: black;
+    placeholder-color: darkgray;
+    width: 60%;
+}
+
+.divider-horizontal {
+    color: darkgray;
+    width: 100%;
+    height: 0.5px;
+    background-color: transparent;
+}
+
+.number-space {
+    justify-content: space-between;
+}
+
+.confirm-button-base {
+    height: 40px;
+    width: 144px;
+    text-color: #007DFF;
+    border-radius: 40px;
+    font-size: 16px;
+    font-family: HWtext-65ST,HWtext;
+    background-color: transparent;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.confirm-button-base-active {
+    height: 40px;
+    width: 144px;
+    text-color: #ffffff;
+    border-radius: 40px;
+    font-size: 16px;
+    font-family: HWtext-65ST,HWtext;
+    background-color: #007DFF;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.cancel-button-base {
+    height: 22px;
+    width: 100%;
+    font-size: 16px;
+    text-color: #358CFD;
+    margin-bottom: 24px;
+    background-color: transparent;
+}
+
+.divider-vertical {
+    height: 24px;
+    width: 2px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+.fontTitle {
+    font-size: 40px;
+    color: #000000;
+    margin-top: 30px;
+}
+
+.fontContent {
+    font-size: 32px;
+}
+
+.dialogContainer {
+    flex-direction: column;
+    margin-left: 48px;
+    margin-right: 48px;
+}
+
+.confirm-button-container {
+    margin-bottom: 16px;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.right-position {
+    position: absolute;
+    right: 0px;
+}

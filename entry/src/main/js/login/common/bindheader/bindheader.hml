@@ -1,0 +1,7 @@
+<div class="header-container">
+    <div class="logo-container">
+        <image class="logo-image" src="{{ $t('files.hwIdLogo') }}"/>
+        <image class="connection-image" src="{{ $t('files.connection') }}"/>
+        <image class="logo-image" src="{{ $t('files.cpLogo') }}"/>
+    </div>
+</div>

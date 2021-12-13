@@ -1,0 +1,19 @@
+<element name="netheader" src="../../common/netheader/netheader">
+</element>
+<div class="container">
+    <netheader>
+    </netheader>
+    <div class="flex-column">
+        <div class="flex-column margin-top-16">
+            <text
+                    class="text-center discover-present font-65ST">{{ discoverPresent }}
+            </text>
+            <text class="text-center discover-ap color-gray">{{ discoverAp }}
+            </text>
+            <div class="text-center margin-top-24">
+                <button onclick="softCancelClick" class="cancel-button-base" value="{{ $t('strings.cancelValue') }}">
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

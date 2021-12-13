@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="text-center flex-column device-img-top">
+        <div class="text-center">
+            <image src="{{ $t('files.device') }}" class="device-img">
+            </image>
+        </div>
+        <text class="{{ isNetValue ? 'net-name' : 'device-name' }} font-65ST">{{ deviceNameValue }}
+        </text>
+        <text class="device-version font-55ST" if="{{ actionType == 'showVersion' }}">{{ deviceVersionValue }}
+        </text>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+<element name="header" src="../../common/header/header">
+</element>
+<div class="container">
+    <header action="showVersion">
+    </header>
+
+    <div class="content flex-column text-center">
+        <div class="text-center flex-column">
+            <div class="text-center flex-column">
+                <text class="authorizeDescription font-55ST">{{ $t('strings.authorizeDescription') }}
+                </text>
+                <div onclick="hwLoginClick" class="confirm-button-base-red text-center">
+                    <image src="{{ $t('files.hwSignLogo') }}" class="hw-img">
+                    </image>
+                    <text class="sign-text font-65ST">{{ $t('strings.hwAccountLoginValue') }}
+                    </text>
+                </div>
+                <div onclick="cancelLoginClick" class="cancel-button text-center">
+                    <text class="cancel-text font-65ST">{{ $t('strings.cancelValue') }}
+                    </text>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

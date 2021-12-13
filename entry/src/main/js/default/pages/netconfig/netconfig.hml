@@ -1,0 +1,6 @@
+<div class="container">
+    <image src="{{ deviceImg }}" class="device-image"/>
+    <text class="progress">{{ progress }}</text>
+    <text class="desc">{{ desc }}</text>
+    <button class="button" value="{{ $t('strings.cancel') }}" onclick="cancel"/>
+</div>

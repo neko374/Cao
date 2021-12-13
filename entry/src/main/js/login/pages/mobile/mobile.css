@@ -1,0 +1,12 @@
+@import '../../common/css/common.css';
+
+.page-mobile-subscript-text {
+    font-size: 14px;
+    margin-top: 64px;
+    margin-bottom: 23px;
+}
+
+.common-text {
+    margin-top: 24px;
+}
+

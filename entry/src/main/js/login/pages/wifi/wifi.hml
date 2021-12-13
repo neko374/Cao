@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="flex-column margin-top-24">
+        <text class="font-65ST-bold font-20 font-color-black">{{ $t('strings.page-wifi-titile') }}
+        </text>
+        <text class="font-55ST font-14 font-color-light">{{ $t('strings.page-wifi-titileDes') }}
+        </text>
+    </div>
+    <div class="margin-top-16">
+        <refresh offset="30px" refreshing="{{ refreshing }}" type="pulldown" @refresh="refreshWifi">
+            <list>
+                <list-item for="{{ wifis }}" onclick="wifiListItemClick($idx)">
+                    <div class="wifi-list-item">
+                        <div style="flex-direction : column;">
+                            <text class="ssid">{{ $item.ssid }}</text>
+                            <text class="encryption">{{ $t('strings.page-wifi-encryption') }}</text>
+                        </div>
+                        <image class="wifi-icon" src="{{ $t('files.wifiIcon') }}">
+                        </image>
+                    </div>
+                </list-item>
+            </list>
+        </refresh>
+    </div>
+    <div class="text-center">
+        <button onclick="cancelClick" class="cancel-button-base margin-top-24" type="text"
+                value="{{ $t('strings.cancelValue') }}">
+        </button>
+    </div>
+</div>

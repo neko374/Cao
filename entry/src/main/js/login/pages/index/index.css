@@ -1,0 +1,65 @@
+@import '../../common/css/common.css';
+
+.content {
+    margin-top: 76px;
+}
+
+.authorizeDescription {
+    font-size: 10px;
+    line-height: 14px;
+    color: #98000000;
+}
+
+.confirm-button-base-red:active {
+    color: white;
+    background-color: gray;
+}
+
+.confirm-button-base-red {
+    height: 40px;
+    width: 100%;
+    margin-left: 25px;
+    margin-right: 25px;
+    border-radius: 40px;
+    color: #FFFFFF;
+    background-color: #0D000000;
+    margin-top: 8px;
+}
+
+.cancel-button:active {
+    color: white;
+    background-color: gray;
+}
+
+.cancel-button {
+    height: 40px;
+    width: 100%;
+    margin-left: 25px;
+    margin-right: 25px;
+    border-radius: 40px;
+    color: #358CFD;
+    background-color: #0D000000;
+    margin-top: 16px;
+    margin-bottom: 44px;
+}
+
+.hw-img {
+    width: 22px;
+    height: 22px;
+}
+
+.cancel-text {
+    color: #FF000000;
+    font-size: 14px;
+}
+
+.sign-text {
+    color: #FF000000;
+    margin-left: 16px;
+    font-size: 14px;
+}
+
+.progressStyle {
+    width: 100px;
+    height: 100px;
+}
